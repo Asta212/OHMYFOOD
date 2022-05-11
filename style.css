@@ -32,3 +32,17 @@ main .city {
 main .city i {
     font-size: 22px;
 }
+
+/* Explorer */
+.explorer {
+    text-align: center;
+}
+
+.explorer h2 {
+    margin-top: 32px;
+    font-size: 30px;
+}
+
+.explorer p {
+    font-size: 15px;
+}

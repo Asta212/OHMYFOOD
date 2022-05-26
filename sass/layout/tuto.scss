@@ -1,4 +1,4 @@
-@import "../utils/zoom.scss";
+@use "../utils/zoom.scss";
 .tuto {
     & ol {
         display: flex;
@@ -14,9 +14,9 @@
         border: 1px solid red;
         flex-grow: 1;
         border-radius: 20px;
-        @include base-shadow;
+        @include box-shadow.base-shadow;
         &:hover {
-            @include zoom;
+            @include transform-zoom;
         }
     }
 }

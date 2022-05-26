@@ -1,4 +1,5 @@
-@import "../utils/box-shadow.scss";
+@use "../utils/box-shadow.scss";
+@use "../utils/zoom.scss";
 
 .explorer {
   text-align: center;
@@ -25,7 +26,7 @@
     );
     cursor: pointer;
     transition: all 200ms;
-    @include base-shadow;
+    @include box-shadow.base-shadow;
   }
   & button:hover {
     transform: scale(1.02);

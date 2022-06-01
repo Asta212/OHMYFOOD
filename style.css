@@ -15,6 +15,16 @@ h2 {
   font-size: 24px;
 }
 
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   font-family: "shrikhand", "cursive";
   text-align: center;
@@ -145,9 +155,10 @@ header {
   min-width: 480px;
 }
 .card_image {
-  height: 240px;
+  height: 192px;
   border-radius: 16px 16px 0 0;
   background-size: cover;
+  background-position: center;
 }
 .card_image-1 {
   background-image: url("../../assets/menu-1.jpg");
@@ -160,6 +171,19 @@ header {
 }
 .card_image-4 {
   background-image: url("../../assets/menu-4.jpg");
+}
+.card_description {
+  position: relative;
+}
+.card_description h3 {
+  margin: 0 0 4px;
+}
+.card_description i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,13 +33,27 @@
   flex-grow: 1;
   min-width: 480px;
   &_image {
-    height: 240px;
+    height: 192px;
     border-radius: 16px 16px 0 0;
     background-size: cover;
+    background-position: center;
   }
   @for $i from 1 through 4 {
     &_image-#{$i} {
       background-image: url("../../assets/menu-#{$i}.jpg");
+    }
+  }
+  &_description {
+    position: relative;
+    h3 {
+      margin: 0 0 4px;
+    }
+    i {
+      font-size: 32px;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }

@@ -65,10 +65,10 @@ header {
   font-size: 18px;
   color: #fff;
   background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition: all 200ms;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer button:hover {
   transform: scale(1.02);
@@ -184,6 +184,33 @@ header {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+.card_description .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 150ms ease-in-out;
+}
+.card_description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+footer {
+  background-color: #353535;
+  padding: 16px;
+  color: white;
+}
+footer h3 {
+  font-family: "shrikhand", sans-serif;
+  font-size: 19.2px;
+  font-weight: 400;
+  margin: 0 0 16px;
+}
+footer p {
+  padding: 3.2px;
 }
 
 /*# sourceMappingURL=style.css.map */

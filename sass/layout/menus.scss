@@ -1,5 +1,6 @@
 @use "../utils/variables";
 @use "../utils/colors";
+@use "../utils/linear-gradient";
 
 .menus {
   background-color: #f6f6f6;
@@ -54,6 +55,18 @@
       right: 16px;
       top: 50%;
       transform: translateY(-50%);
+    }
+    .fas {
+      color: transparent;
+      @include linear-gradient.gradient(1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: all 150ms ease-in-out;
+    }
+    &:hover .fas {
+      opacity: 1;
+      transform: translateY(-50%) scale(1.2);
     }
   }
 }

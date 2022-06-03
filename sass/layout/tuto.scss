@@ -1,5 +1,4 @@
-@use "../utils/box-shadow";
-@use "../utils/zoom";
+@use "../utils/mixins";
 @use "../utils/variables";
 @use "../utils/colors";
 
@@ -34,9 +33,9 @@
     padding: 20px 32px;
     flex-grow: 1;
     border-radius: 20px;
-    @include box-shadow.base-shadow;
+    @include mixins.base-shadow;
     &:hover {
-      @include zoom.transform-zoom;
+      @include mixins.transform-zoom;
     }
     & i.fas {
       margin-right: variables.$tuto-bullet-height;

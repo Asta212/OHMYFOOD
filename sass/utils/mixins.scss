@@ -14,24 +14,24 @@
     transform: scale(1.02);
 }
 
-@mixin heart {
+@mixin heart ($opacity: 1, $font-weight: 400, $color: inherit) {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing : antialiased;
     font-family: "font Awesome 5 free";
-    font-weight: 400;
+    font-weight: $font-weight;
     content: "\f004";
     font-size: 32px;
     position: absolute;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-    color: inherit;
+    color: $color;
     background-clip: text;
     -webkit-background-clip: text;
-    opacity: 1;
+    opacity: $opacity;
     transition: all 150ms ease-in-out;
     
     

@@ -20,7 +20,7 @@
     background-color: #686868;
     cursor: pointer;
     transition: all 200ms;
-    @include mixins.base-shadow;
+    @include mixins.box-shadow;
     @include mixins.gradient(0.9);
   }
   & button:hover {

@@ -33,7 +33,7 @@
     padding: 20px 32px;
     flex-grow: 1;
     border-radius: 20px;
-    @include mixins.base-shadow;
+    @include mixins.box-shadow;
     &:hover {
       @include mixins.transform-zoom;
     }

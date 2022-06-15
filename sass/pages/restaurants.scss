@@ -113,4 +113,13 @@ body {
       }
     }
   }
+
+  section.order {
+    height: 25vh;
+    display: grid;
+    place-items: center;
+    button {
+      @include mixins.base-button;
+    }
+  }
 }

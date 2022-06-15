@@ -70,7 +70,7 @@ header {
   background-color: #686868;
   cursor: pointer;
   transition: all 200ms;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 .explorer button:hover {
@@ -98,7 +98,7 @@ header {
   padding: 20px 32px;
   flex-grow: 1;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
 }
 .tuto li::before {
   content: counter(steps);
@@ -342,7 +342,7 @@ body {
   margin: 9px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
 }
 #page-resto .menus .menus__category .menu-item .menu-item__price {
   margin-left: auto;
@@ -396,6 +396,29 @@ body {
   100% {
     transform: rotate(0);
   }
+}
+#page-resto section.order {
+  height: 25vh;
+  display: grid;
+  place-items: center;
+}
+#page-resto section.order button {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 100px;
+  font-weight: 500;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #686868;
+  cursor: pointer;
+  transition: all 200ms;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+#page-resto section.order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

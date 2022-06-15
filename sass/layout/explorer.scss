@@ -10,21 +10,6 @@
     font-size: 15px;
   }
   & button {
-    margin-top: 10px;
-    border: 0;
-    border-radius: 100px;
-    font-weight: 500;
-    padding: 12px 24px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #686868;
-    cursor: pointer;
-    transition: all 200ms;
-    @include mixins.box-shadow;
-    @include mixins.gradient(0.9);
-  }
-  & button:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
+    @include mixins.base-button;
   }
 }

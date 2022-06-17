@@ -115,7 +115,7 @@ header {
   left: -16px;
 }
 .tuto li:hover {
-  transform: scale(1.02);
+  transform: none scale(1.02);
 }
 .tuto li i.fas {
   margin-right: 16px;
@@ -178,6 +178,7 @@ header {
 }
 #homepage .card_description::before {
   display: inline-block;
+  position: absolute;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -186,7 +187,6 @@ header {
   font-weight: 400;
   content: "\f004";
   font-size: 32px;
-  position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -198,6 +198,7 @@ header {
 }
 #homepage .card_description::after {
   display: inline-block;
+  position: absolute;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -206,7 +207,6 @@ header {
   font-weight: 900;
   content: "\f004";
   font-size: 32px;
-  position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -244,6 +244,24 @@ body {
   background-color: #f6f6f6;
 }
 
+#page-resto header:hover::before {
+  transform: translateY(-50%) scale(1.2);
+}
+#page-resto header::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "font Awesome 5 free";
+  font-weight: 900;
+  content: "\f060";
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
 #page-resto .banner img {
   display: block;
   width: 100%;
@@ -265,6 +283,7 @@ body {
 }
 #page-resto .resto-main h2::before {
   display: inline-block;
+  position: absolute;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -273,7 +292,6 @@ body {
   font-weight: 400;
   content: "\f004";
   font-size: 32px;
-  position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -285,6 +303,7 @@ body {
 }
 #page-resto .resto-main h2::after {
   display: inline-block;
+  position: absolute;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -293,7 +312,6 @@ body {
   font-weight: 900;
   content: "\f004";
   font-size: 32px;
-  position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -307,6 +325,9 @@ body {
 #page-resto .resto-main h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+#page-resto .resto-menu {
+  padding: 16px;
 }
 #page-resto .menus {
   display: grid;

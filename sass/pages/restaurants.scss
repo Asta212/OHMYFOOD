@@ -8,6 +8,19 @@ body {
 }
 
 #page-resto {
+  header {
+    &:hover::before {
+      @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
+    }
+    &::before {
+      @include mixins.font-awesome($font-weight: 900);
+      content: "\f060";
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+    }
+  }
   .banner img {
     display: block;
     width: 100%;
@@ -27,6 +40,10 @@ body {
       font-family: "shrikhand", sans-serif;
       @include mixins.heart-animated;
     }
+  }
+
+  .resto-menu {
+    padding: 16px;
   }
 
   .menus {

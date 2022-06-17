@@ -10,21 +10,25 @@
   );
 }
 
-@mixin transform-zoom {
-  transform: scale(1.02);
+@mixin transform-zoom($zoom-level: 1.02, $transformation: none) {
+  transform: $transformation scale($zoom-level);
 }
 
-@mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+@mixin font-awesome($font-weight: 400) {
   display: inline-block;
+  position: absolute;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "font Awesome 5 free";
   font-weight: $font-weight;
+}
+
+@mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+  @include font-awesome($font-weight);
   content: "\f004";
   font-size: 32px;
-  position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);

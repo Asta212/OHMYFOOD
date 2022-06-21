@@ -6,7 +6,7 @@ https://openclassrooms.com/en/courses/6106181-simplifiez-vous-le-css-avec-sass/
 
 Technologies used: HTML, CSS, SCSS, animations, keyframes, mixins, npm scripts PostCSS, Autoprefixer, CSSNano
 
-Capture d’écran (24).png
+C:\Users\User\OneDrive\Documents\PROJET\P3\OHMYFOOD\assets\Capture d’écran (24).png
 
 
 

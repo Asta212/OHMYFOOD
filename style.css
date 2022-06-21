@@ -126,6 +126,8 @@ header {
 }
 .tuto li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 20px 32px;
@@ -148,7 +150,11 @@ header {
   left: -16px;
 }
 .tuto li:hover {
-  transform: none scale(1.02);
+  transform: scale(1.02);
+  background-color: #f2eafb;
+}
+.tuto li:hover i::before {
+  color: #9356DC;
 }
 .tuto li i.fas {
   margin-right: 16px;
@@ -207,6 +213,9 @@ header {
   background-image: url("../../assets/menu-4.jpg");
 }
 #homepage .card_description {
+  height: 70px;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
   position: relative;
 }
 #homepage .card_description::before {
@@ -254,7 +263,8 @@ header {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
-#homepage .card_description h3 {
+#homepage .card_description h3,
+#homepage .card_description p {
   margin: 0 0 4px;
 }
 

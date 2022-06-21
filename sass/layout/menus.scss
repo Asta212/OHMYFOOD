@@ -46,9 +46,13 @@
       }
     }
     &_description {
+      height: 70px;
+      background-color: white;
+      border-radius: 0 0 16px 16px;
       @include mixins.heart-animated;
 
-      h3 {
+      h3,
+      p {
         margin: 0 0 4px;
       }
     }

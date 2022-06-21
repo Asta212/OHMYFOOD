@@ -201,16 +201,16 @@ header {
   background-position: center;
 }
 #homepage .card_image-1 {
-  background-image: url("../../assets/menu-1.jpg");
+  background-image: url("../assets/menu-1.jpg");
 }
 #homepage .card_image-2 {
-  background-image: url("../../assets/menu-2.jpg");
+  background-image: url("../assets/menu-2.jpg");
 }
 #homepage .card_image-3 {
-  background-image: url("../../assets/menu-3.jpg");
+  background-image: url("../assets/menu-3.jpg");
 }
 #homepage .card_image-4 {
-  background-image: url("../../assets/menu-4.jpg");
+  background-image: url("../assets/menu-4.jpg");
 }
 #homepage .card_description {
   height: 70px;

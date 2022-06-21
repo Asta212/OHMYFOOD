@@ -10,6 +10,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 112px;
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 0 16px;
+  }
+}
+
 h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
